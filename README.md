@@ -1,5 +1,25 @@
-# PiGFX 
-## Raspberry Pi graphics card / ANSI terminal emulator
+# Raspberry Pi Video Card
+This project is based on the ["PiGFX”](https://github.com/fbergama/pigfx) repository which is an emulator for an ANSI terminal made using Raspberry Pi.
+
+By: Lincă Marius Gheorghe.
+
+Pitești, Argeș, Romania, Europe.
+
+https://github.com/LincaMarius
+
+## About the project, brief description
+The goal of this project is to create a high-performance and inexpensive video card that can display a quality image with VGA and SVGA resolutions on a modern monitor.
+
+Initially I wanted to make this project from scratch.
+
+But I found this repository that has a concept close to my goal. The author of this project aimed at an ANSI terminal emulator. The interface with the base system is done via UART.
+
+In order not to reinvent the wheel, I decided to start with a functional, field-tested starting point. The PiGFX project has most of the elements I was looking for.
+
+Through this project, I want to create a video card in the form of a module that connects to the base system via a parallel interface.
+
+
+
 
 
 <img src="doc/scr1.jpg" width="80%" />
