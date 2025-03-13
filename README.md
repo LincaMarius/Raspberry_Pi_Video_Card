@@ -23,15 +23,16 @@ Since the starting point of this project is “PiGFX”, the first thing to do i
 
 I am using Windows 11 on my computer. So below I will describe the steps that I followed using this host operating system.
 
+### Testing
 I followed the steps described in the original reposy:
 
 1. I formatted an SD card using the FAT32 file system.
 
 2. I copied to the root of the SD card the files: ```start.elf ```, ```start4.elf ``` and ```bootcode.bin ``` that are commonly [distributed with the Raspberry Pi](https://github.com/raspberrypi/firmware/tree/master/boot).
 
-3. I copied all the files in ```bin/*.img``` to the root of the SD card.
+3. I copied all the files in ```Version_1/bin/*.img``` to the root of the SD card.
 
-4. I copied the ```bin/pigfx.txt``` file to the root of the SD card without modifying it.
+4. I copied the ```Version_1/bin/pigfx.txt``` file to the root of the SD card without modifying it.
 
 5. I inserted the SD card and turned on the Raspberry Pi.
 
@@ -46,11 +47,11 @@ I tested PGFX on models that I have:
 
 Using the Raspberry Pi Zero 2 W and the Kingston 2GB SD card without a keyboard or mouse connected, I obtained the following result:
 
-![ Figure 1 ](/ Version_1/Pictures/Figure1.png)
+![ Figure 1 ](/Version_1/Pictures/Figure1.png)
 
 Using the Raspberry Pi 4 Model B and the Kingston 2GB SD card without a keyboard or mouse connected, I obtained the following result:
 
-![ Figure 2 ](/ Version_1/Pictures/Figure2.png)
+![ Figure 2 ](/Version_1/Pictures/Figure2.png)
 
 
 
