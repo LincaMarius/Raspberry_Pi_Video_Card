@@ -64,6 +64,17 @@ The project must be downloaded as a Zip file and then unzipped. For example, in 
 
 Navigate to the folder: D:\Raspberry_Pi_Video_Card\Version_1 and run the file: [ TestQemu.bat ](/Version_1/TestQemu.bat)
 
+### Compiling on Windows
+I am using Windows 11 on my computer. So below I will describe the steps that I followed to compile the original code on my computer.
+
+I downloaded the file ```arm-gnu-toolchain-14.2.rel1-mingw-w64-x86_64-arm-none-eabi.exe``` from here: https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads and installed the "GNU ARM cross compiler toolchain".
+
+I added the GNU ARM cross compiler toolchain to the Path variable of System Environment Variables during installation.
+
+Navigate to the folder: D:\Raspberry_Pi_Video_Card\Version_1 and run the file: [ makeall.bat ](/Version_1/makeall.bat)
+
+
+
 
 ## License
 
