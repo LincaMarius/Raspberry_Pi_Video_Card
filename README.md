@@ -40,6 +40,10 @@ The available SD cards I use are:
 - Hama 32 GB SD Card HC I
 - Platient 64GB SD Card UHS-I
 
+I tested PGFX on models that I have:
+- Raspberry Pi Zero 2 W
+- Raspberry Pi 4 Model B 8 GB
+
 
 
 
