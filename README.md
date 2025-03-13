@@ -47,11 +47,11 @@ I tested PGFX on models that I have:
 
 Using the Raspberry Pi Zero 2 W and the Kingston 2GB SD card without a keyboard or mouse connected, I obtained the following result:
 
-![ Figure 1 ](/Version1/Pictures/Figure1.png)
+![ Figure 1 ](/Version_1/Pictures/Figure1.jpg)
 
 Using the Raspberry Pi 4 Model B and the Kingston 2GB SD card without a keyboard or mouse connected, I obtained the following result:
 
-![ Figure 2 ](/Version1/Pictures/Figure2.png)
+![ Figure 2 ](/Version_1/Pictures/Figure2.jpg)
 
 The initial resolution of the displayed images is 640 x 480 @ 60 Hz.
 
