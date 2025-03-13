@@ -18,6 +18,27 @@ In order not to reinvent the wheel, I decided to start with a functional, field-
 
 Through this project, I want to create a video card in the form of a module that connects to the base system via a parallel interface.
 
+## Version 1
+Since the starting point of this project is “PiGFX”, the first thing to do is make sure that we can run the original files on a Raspberry Pi board.
+
+I am using Windows 11 on my computer. So below I will describe the steps that I followed using this host operating system.
+
+I followed the steps described in the original reposy:
+
+1. I formatted an SD card using the FAT32 file system.
+
+2. I copied to the root of the SD card the files: ```start.elf ```, ```start4.elf ``` and ```bootcode.bin ``` that are commonly [distributed with the Raspberry Pi](https://github.com/raspberrypi/firmware/tree/master/boot).
+
+3. I copied all the files in ```bin/*.img``` to the root of the SD card.
+
+4. I copied the ```bin/pigfx.txt``` file to the root of the SD card without modifying it.
+
+5. I inserted the SD card and turned on the Raspberry Pi.
+
+The available SD cards I use are:
+- Kingston 2GB SD Card
+- Hama 32 GB SD Card HC I
+- Platient 64GB SD Card UHS-I
 
 
 
