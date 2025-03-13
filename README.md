@@ -44,10 +44,15 @@ I tested PGFX on models that I have:
 - Raspberry Pi Zero 2 W
 - Raspberry Pi 4 Model B 8 GB
 
+Using the Raspberry Pi Zero 2 W and the Kingston 2GB SD card without a keyboard or mouse connected, I obtained the following result:
+
+![ Figure 1 ](/ Version_1/Pictures/Figure1.png)
+
+Using the Raspberry Pi 4 Model B and the Kingston 2GB SD card without a keyboard or mouse connected, I obtained the following result:
+
+![ Figure 2 ](/ Version_1/Pictures/Figure2.png)
 
 
-
-<img src="doc/scr1.jpg" width="80%" />
 
 PiGFX is a bare metal kernel for the Raspberry Pi that implements a basic ANSI
 terminal emulator with the additional support of some primitive graphics
