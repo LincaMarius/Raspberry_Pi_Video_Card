@@ -62,7 +62,8 @@ The initial resolution of the displayed images is 640 x 480 @ 60 Hz.
 
 The MIT License (MIT)
 
-Copyright (c) 2016-2020 Filippo Bergamasco.
+Copyright (c) 2016-2020 Filippo Bergamasco. 
+
 Copyright (c) 2024 Lincă Marius Gheorghe.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
