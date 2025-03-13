@@ -47,91 +47,17 @@ I tested PGFX on models that I have:
 
 Using the Raspberry Pi Zero 2 W and the Kingston 2GB SD card without a keyboard or mouse connected, I obtained the following result:
 
-![ Figure 1 ](/Version_1/Pictures/Figure1.png)
+![ Figure 1 ](/Version1/Pictures/Figure1.png)
 
 Using the Raspberry Pi 4 Model B and the Kingston 2GB SD card without a keyboard or mouse connected, I obtained the following result:
 
-![ Figure 2 ](/Version_1/Pictures/Figure2.png)
+![ Figure 2 ](/Version1/Pictures/Figure2.png)
+
+The initial resolution of the displayed images is 640 x 480 @ 60 Hz.
 
 
 
-PiGFX is a bare metal kernel for the Raspberry Pi that implements a basic ANSI
-terminal emulator with the additional support of some primitive graphics
-functions. It can be driven by pushing characters to the raspi UART. Additional
-functions like changing text color, moving the cursor or clear the screen can
-be invoked via ANSI escape codes.  The result is that you can easily add an
-HDMI display output to your embedded project without the hassle of directly
-generate the video signal.
 
-This work is inspired by [Spencer's
-project](https://hackaday.io/project/9567-5-graphics-card-for-homebrew-z80)
-that aims to create a cheap graphics card and keyboard interface to its
-homebrew Z80 computer. PiGFX has the advantage of removing the fuss of having a
-full-featured Linux system running on your raspi. This dramatically decreases
-the boot time, lets the system be more customizable and, of course, adds a lot
-of fun :) 
-
-*UPDATE*: Thanks to the [uspi](https://github.com/rsta2/uspi) bare-metal USB
-driver PiGFX now support an external USB keyboard as input device. Anything
-typed will be automatically sent to raspi UART Tx0 (pin 8, GPIO 14).
-
-*UPDATE*: (2018 Nov. by F. Pierot) Added display modes, fonts, tabulation set... See [2018 Nov. modifications](README_ADD.md).
-
-*UPDATE*: (2020 by Ch. Lehner) Added new graphic features and configurable baudrate. Fixed some bugs. Ported to Raspberry Pi 2, 3 and 4. Also included the ability to read a config file on the SD card. Also added support for PS/2 keyboards.
-
-By now this is a work in progress with a minimum set of features implemented so
-expect that more functionalities will be added from time to time.
-
-PiGFX should be working on all Pi models from generation 1 to generation 4. However there is no USB support on the model 4. It's tested on the following models:
-
-- Pi Zero
-- Pi Zero W
-- Pi B
-- Pi B+
-- Pi 2B
-- Pi 3B
-- Pi 4B
-
-
-Here is a preliminary TODO list of what I plan to add in the future:
-
-- ✔ Add support for USB or Ps2 keyboard
-- ✔ Add some graphics primitives like lines
-- ✔ Add some more graphics primitives (circles, rectangles etc.)
-- ✔ Let the resolution being configurable without recompiling
-- ✔ Port to Raspberry Pi Generation 2/3/4
-- ✔ Load configuration from SD card
-- ✔ Support for PS/2 keyboard
-- ✔ Implement some kind of sprite handling with collision detection
-- Implement double buffering
-- Load bitmap fonts directly from the SD card
-- Implement a 8bit interface
-- Support for USB / PS/2 Mouse
-
-## How to run
-
-1. Format an SD-card: you need one 1 GB partition using the FAT or FAT32 system. 
-Other formats won't boot, and a bigger size is useless. Avoid 64GB+ cards as 
-they tend to cause problems to PI. A 32GB or 16GB card is ok as long as you 
-format only 1 or 2 GB with FAT or FAT32.
-
-2. Copy all ```bin/*.img``` to the root of the SD card along with the files
-   ```start.elf```, ```start4.elf``` and ```bootcode.bin``` that are commonly [distributed with
-the Raspberry Pi](https://github.com/raspberrypi/firmware/tree/master/boot).
-
-3. Copy ```bin/pigfx.txt``` to the root of the SD card. Edit the file for your
-   needs. If you have a config.txt on the SD card, delete it.
-
-4. Insert the card and reboot the Pi.
-
-As soon as your raspi is turned on, the boot screen and other informations 
-should be displayed as a 640x480 @ 60hz video stream from the HDMI interface. 
-After that, PiGFX awaits anything coming from the serial line. Any data
-received from the UART is immediately displayed in a terminal-like fashion (ie.
-it automatically scrolls once you reach the bottom of the screen, etc.).
-
-You may need to reset your computer before PiGFX displays anything coming from it.
- 
 ### Test inside QEMU
 
 PiGFX can be emulated with [QEMU](http://wiki.qemu.org/Main_Page). Just
