@@ -56,6 +56,13 @@ Using the Raspberry Pi 4 Model B and the Kingston 2GB SD card without a keyboard
 The initial resolution of the displayed images is 640 x 480 @ 60 Hz.
 
 ### Testing using Qemu
+For testing I installed Qemu on Windows 11 using https://qemu.weilnetz.de/w64/qemu-w64-setup-20250210.exe
+
+Qemu must be added to the Path variable of System Environment Variables.
+
+The project must be downloaded as a Zip file and then unzipped. For example, in the location D:\Raspberry_Pi_Video_Card.
+
+Navigate to the folder: D:\Raspberry_Pi_Video_Card\Version_1 and run the file: [ TestQemu.bat ](/Version_1/TestQemu.bat)
 
 
 ## License
